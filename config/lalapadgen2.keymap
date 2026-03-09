@@ -59,12 +59,12 @@
         };
 
         COMBO_MO3_L {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <34 35>;
         };
 
         COMBO_MO3_R {
-            bindings = <&mo 3>;
+            bindings = <&mo 1>;
             key-positions = <36 37>;
         };
 
