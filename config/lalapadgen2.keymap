@@ -59,18 +59,18 @@
         };
 
         COMBO_MO3_L {
-            bindings = <&mo 3>;
+            bindings = <&macro_short>;
             key-positions = <34 35>;
         };
 
         COMBO_MO3_R {
-            bindings = <&mo 3>;
+            bindings = <&macro_norm>;
             key-positions = <36 37>;
         };
 
         COMBO_MS {
             bindings = <&macro_ms>;
-            key-positions = <20 30>;
+            key-positions = <20 10>;
         };
     };
 
