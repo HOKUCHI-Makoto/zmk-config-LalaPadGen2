@@ -59,12 +59,12 @@
         };
 
         COMBO_MO3_L {
-            bindings = <&macro_short>;
+            bindings = <&mo 3>;
             key-positions = <34 35>;
         };
 
         COMBO_MO3_R {
-            bindings = <&macro_norm>;
+            bindings = <&mo 3>;
             key-positions = <36 37>;
         };
 
@@ -163,13 +163,13 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
-&macro_security  &none   &none   &none   &none                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&macro_norm      &none   &none   &none   &none                   &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
-&macro_short     &none   &none   &none   &none                   &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
-&trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans                         &trans                         &trans
-&trans           &trans  &trans                                                                                                &trans                         &trans                         &trans
-&trans           &trans  &trans  &trans  &trans                  &trans                         &trans                         &trans                         &trans                         &trans
+&macro_security  &kp HOME        &kp UP_ARROW  &kp END    &none                          &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
+&macro_norm      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PG_UP                      &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&macro_short     &none           &none         &none      &kp PAGE_DOWN                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
+&trans           &trans          &trans        &trans     &trans         &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
+                 &trans          &trans        &trans     &trans         &trans  &trans  &trans                         &trans                         &trans                         &trans
+&trans           &trans          &trans                                                                                                                &trans                         &trans                         &trans
+&trans           &trans          &trans        &trans     &trans                         &trans                         &trans                         &trans                         &trans                         &trans
             >;
         };
 
