@@ -59,6 +59,50 @@
         };
     };
 
+    macros {
+        macro_security: macro_security {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp AT &kp K &kp N0 &kp T &kp N0 &kp LS(H) &kp N0 &kp K &kp U &kp C &kp H &kp N1>;
+            label = "MACRO_SECURITY";
+        };
+
+        macro_norm: macro_norm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp A &kp K &kp N0 &kp T &kp N0 &kp LS(H) &kp N0 &kp K &kp U &kp C &kp H &kp N1>;
+            label = "MACRO_NORM";
+        };
+
+        macro_short: macro_short {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp N0 &kp K &kp U &kp C &kp H &kp N1>;
+            label = "MACRO_SHORT";
+        };
+
+        macro_fenrir: macro_fenrir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(INT_YEN))>;
+            label = "MACRO_FENRIR";
+        };
+
+        macro_everything: macro_everything {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(BACKSPACE))>;
+            label = "MACRO_EVERYTHING";
+        };
+
+        macro_ms: macro_ms {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp M &kp LS(M) &kp A &kp K &kp N0 &kp T &kp N0 &kp DLLR &kp N3>;
+            label = "MACRO_MS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
