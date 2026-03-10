@@ -59,12 +59,12 @@
         };
 
         COMBO_MO3_L {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <34 35>;
         };
 
         COMBO_MO3_R {
-            bindings = <&mo 1>;
+            bindings = <&mo 3>;
             key-positions = <36 37>;
         };
 
@@ -135,7 +135,7 @@
         };
 
         NUMERIC_LAYER {
-            display-name = "secondary_layer";
+            display-name = "NUMERIC_LAYER";
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_EQUAL      &none              &kp N7        &kp N8        &kp N9
 &kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &kp KP_MINUS      &kp KP_PLUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6
@@ -148,7 +148,7 @@
         };
 
         SYMBOL_LAYER {
-            display-name = "tertiary_layer";
+            display-name = "SYMBOL_LAYER";
             bindings = <
 &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none                 &kp TILDE                              &kp INT_YEN  &kp UNDER  &kp SLASH     &none   &kp BACKSPACE
 &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp MINUS    &kp PLUS   &kp ASTERISK  &none   &none
@@ -161,7 +161,7 @@
         };
 
         SYSTEM_LAYER {
-            display-name = "system_layer";
+            display-name = "SYSTEM_LAYER";
             bindings = <
 &macro_security  &kp HOME        &kp UP_ARROW  &kp END    &none                          &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
 &macro_norm      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PG_UP                      &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
@@ -189,8 +189,13 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        Cond_Syslayer {
-            if-layers = <1 2>;
+        Cond_SysLayer1 {
+            if-layers = <2 4>;
+            then-layer = <3>;
+        };
+
+        Cond_SysLayer2 {
+            if-layers = <2 1>;
             then-layer = <3>;
         };
     };
