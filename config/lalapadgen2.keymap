@@ -71,16 +71,6 @@
             bindings = <&macro_ms>;
             key-positions = <20 10>;
         };
-
-        COMBO_LEFT {
-            bindings = <&mo 3>;
-            key-positions = <34 35>;
-        };
-
-        COMBO_RIGHT {
-            bindings = <&mo 3>;
-            key-positions = <36 37>;
-        };
     };
 
     macros {
@@ -195,17 +185,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Cond_Syslayer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        Cond_SysLayer2 {
-            if-layers = <1 4>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
