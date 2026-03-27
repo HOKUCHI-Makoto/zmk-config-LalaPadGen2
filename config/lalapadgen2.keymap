@@ -33,11 +33,13 @@
         mt2: mod_tap2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <35>;
         };
 
         td_ctrl_l3: td_ctrl_l3 {
@@ -45,6 +47,8 @@
             label = "TD_CTRL_L3";
             #binding-cells = <0>;
             bindings = <&kp RCTRL>, <&mo 3>;
+
+            tapping-term-ms = <300>;
         };
 
         dot_comma: dot_comma {
@@ -61,6 +65,8 @@
             label = "TD_A_TAB";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp TAB>;
+
+            tapping-term-ms = <300>;
         };
 
         td_q_esc: td_q_esc {
@@ -68,6 +74,8 @@
             label = "TD_Q_ESC";
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp ESCAPE>;
+
+            tapping-term-ms = <300>;
         };
 
         td_p_bs: td_p_bs {
@@ -75,6 +83,8 @@
             label = "TD_P_BS";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <300>;
         };
     };
 
