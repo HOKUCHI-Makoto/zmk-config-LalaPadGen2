@@ -121,7 +121,7 @@
 
         COMBO_FN_RIGHT {
             bindings = <&kp A>;
-            key-positions = <37 37 38>;
+            key-positions = <38 36>;
         };
 
         COMBO_BS {
