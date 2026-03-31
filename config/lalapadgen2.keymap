@@ -120,7 +120,7 @@
         };
 
         COMBO_FN_RIGHT {
-            bindings = <&mo 1>;
+            bindings = <&kp A>;
             key-positions = <37 37 38>;
         };
 
