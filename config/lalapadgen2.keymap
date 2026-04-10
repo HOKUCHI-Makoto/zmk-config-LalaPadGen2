@@ -12,7 +12,7 @@
 #define SYSTEM_LAYER    3
 
 &mt {
-    hold-trigger-key-positions = <35 27 28 29 19 36 39 40>;
+    hold-trigger-key-positions = <35 27 28 29 19 36 39 40 42 43 44 45 48 49 50 51 42 43 45 46 47 48 51>;
     tapping-term-ms = <150>;
 };
 
