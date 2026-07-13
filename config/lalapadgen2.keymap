@@ -191,7 +191,7 @@
 &kp A             &kp S         &kp D         &kp F      &kp G                            &kp H            &kp J     &kp K                         &kp L                          &mt2 K_CONTEXT_MENU SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B                            &kp N            &kp M     &kp COMMA                     &kp PERIOD                     &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &mo 2      &lt 1 TAB  &kp SPACE  &kp ENTER  &lt 1 BACKSPACE  &mo 2     &mt2 LANGUAGE_2 LEFT_BRACKET  &mt2 LANGUAGE_1 RIGHT_BRACKET  &td_ctrl_l3
-                  &none         &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP     &kp UP     &kp LEFT         &kp DOWN  &kp RIGHT                     &none
+                  &kp LEFT_ALT  &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP     &kp UP     &kp LEFT         &kp DOWN  &kp RIGHT                     &kp RCTRL
 &mkp LCLK         &mkp RCLK     &mkp MCLK                                                                            &mkp LCLK                     &mkp RCLK                      &mkp MCLK
 &mkp MB4          &mkp MB5      &kp LG(TAB)   &kp LG(D)  &kp LCTRL                        &mkp MB4         &mkp MB5  &kp LG(TAB)                   &kp LG(D)                      &kp LCTRL
             >;
@@ -204,7 +204,7 @@
 &macro_normal     &kp LEFT           &kp DOWN       &kp RIGHT          &kp PG_UP                            &kp INSERT        &kp HOME           &kp F4   &kp F5   &kp F6
 &macro_short      &none              &macro_fenrir  &macro_everything  &kp PAGE_DOWN                        &kp DELETE        &kp END            &kp F1   &kp F2   &kp F3
 &trans            &trans             &trans         &trans             &trans         &trans     &trans     &trans            &trans             &kp F10  &kp F11  &kp F12
-                  &trans             &kp END        &kp PAGE_DOWN      &kp HOME       &kp PG_UP  &kp PG_UP  &kp HOME          &kp PAGE_DOWN      &kp END  &trans
+                  &none              &kp END        &kp PAGE_DOWN      &kp HOME       &kp PG_UP  &kp PG_UP  &kp HOME          &kp PAGE_DOWN      &kp END  &none
 &trans            &trans             &trans                                                                                                      &trans   &trans   &trans
 &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans         &trans             &trans                               &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans   &trans   &trans
             >;
@@ -217,7 +217,7 @@
 &kp AT       &kp SQT            &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                        &kp MINUS    &kp PLUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6
 &kp PERCENT  &kp EXCL           &kp CARET   &kp PIPE              &kp AMPS                                     &kp SLASH    &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
 &trans       &trans             &trans      &trans                &trans                 &trans     &trans     &trans       &trans         &kp N0        &dot_comma    &kp ENTER
-             &trans             &kp END     &kp PAGE_DOWN         &kp HOME               &kp PG_UP  &kp PG_UP  &kp HOME     &kp PAGE_DOWN  &kp END       &trans
+             &none              &kp END     &kp PAGE_DOWN         &kp HOME               &kp PG_UP  &kp PG_UP  &kp HOME     &kp PAGE_DOWN  &kp END       &none
 &trans       &trans             &trans                                                                                                     &trans        &trans        &trans
 &trans       &trans             &trans      &trans                &trans                                       &trans       &trans         &trans        &trans        &trans
             >;
@@ -230,7 +230,7 @@
 &none   &none   &none   &none   &none                   &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
 &none   &none   &none   &none   &none                   &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans                         &trans                         &trans
+        &none   &trans  &trans  &trans  &trans  &trans  &trans                         &trans                         &trans                         &none
 &trans  &trans  &trans                                                                                                &trans                         &trans                         &trans
 &trans  &trans  &trans  &trans  &trans                  &trans                         &trans                         &trans                         &trans                         &trans
             >;
